@@ -28,3 +28,7 @@
   path = ~/.gitconfig.local
 [diff]
   colorMoved = zebra
+[user]
+	emain = bbwashi@outlook.com
+	email = bbwashi@outlook.com
+	name = bardamu-sudo
