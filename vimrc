@@ -16,6 +16,7 @@ set autowrite     " Automatically :write before running commands
 set modelines=0   " Disable modelines as a security precaution
 set nomodeline
 
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
@@ -121,10 +122,10 @@ inoremap <S-Tab> <C-n>
 nnoremap <Leader><Leader> <C-^>
 
 " Get off my lawn
-nnoremap <Left> :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up> :echoe "Use k"<CR>
-nnoremap <Down> :echoe "Use j"<CR>
+" nnoremap <Left> :echoe "Use h"<CR>
+" nnoremap <Right> :echoe "Use l"<CR>
+" nnoremap <Up> :echoe "Use k"<CR>
+" nnoremap <Down> :echoe "Use j"<CR>
 
 " vim-test mappings
 nnoremap <silent> <Leader>t :TestFile<CR>
