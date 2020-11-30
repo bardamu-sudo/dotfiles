@@ -74,12 +74,6 @@ augroup END
 " shell for syntax highlighting purposes.
 let g:is_posix = 1
 
-" Softtabs, 2 spaces
-set tabstop=2
-set shiftwidth=2
-set shiftround
-set expandtab
-
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
 

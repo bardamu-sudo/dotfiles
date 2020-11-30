@@ -3,6 +3,9 @@ for function in ~/.zsh/functions/*; do
   source $function
 done
 
+# Only load Liquid Prompt in interactive shells, not from a script or from scp
+[[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
+
 # extra files in ~/.zsh/configs/pre , ~/.zsh/configs , and ~/.zsh/configs/post
 # these are loaded first, second, and third, respectively.
 _load_settings() {
@@ -38,4 +41,4 @@ _load_settings "$HOME/.zsh/configs"
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 # aliases
-[[ -f ~/.aliases ]] && source ~/.aliases
+[[ -f ~/.aliases ]] && source ~/.aliases.local
