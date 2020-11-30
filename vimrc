@@ -134,6 +134,9 @@ nnoremap <silent> <Leader>l :TestLast<CR>
 nnoremap <silent> <Leader>a :TestSuite<CR>
 nnoremap <silent> <Leader>gt :TestVisit<CR>
 
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
 " Run commands that require an interactive shell
 nnoremap <Leader>r :RunInInteractiveShell<Space>
 
