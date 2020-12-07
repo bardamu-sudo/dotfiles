@@ -47,9 +47,16 @@ Plug 'vim-scripts/tComment'
 Plug 'Valloric/YouCompleteMe'
 Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8'
+Plug 'altercation/vim-colors-solarized'
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'kien/ctrlp.vim'
+let NERDTreeIgnore=['\.py$', '\~$'] "ignore files in NERDTree
+
 if g:has_async
   Plug 'dense-analysis/ale'
 endif
+
 
 if filereadable(expand("~/.vimrc.bundles.local"))
 	source ~/.vimrc.bundles.local

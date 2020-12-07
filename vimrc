@@ -54,6 +54,14 @@ augroup vimrcEx
   autocmd BufRead,BufNewFile vimrc.local set filetype=vim
 augroup END
 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 " ALE linting events
 augroup ale
   autocmd!
@@ -136,6 +144,18 @@ nnoremap <silent> <Leader>gt :TestVisit<CR>
 
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+let g:syntastic_c_checkers = ['check']
+let g:syntastic_cfg_checkers = ['cfg']
+let g:syntastic_dosini_checkers = ['dosini']
+let g:syntastic_make_checkers = ['gnumake']
+let g:syntastic_javascript_checkers = ['json_tool']
+let g:syntastic_javascript_checkers = ['json_tool']
+let g:syntastic_gitcommit_checkers = ['language_check']
+let g:syntastic_svn_checkers = ['language_check']
+let g:syntastic_gitcommit_checkers = ['proselint']
+let g:syntastic_python_checkers = ['pyflakes_with_warnings']
+let g:syntastic_yaml_checkers = ['pyyaml']
 
 " Run commands that require an interactive shell
 nnoremap <Leader>r :RunInInteractiveShell<Space>
